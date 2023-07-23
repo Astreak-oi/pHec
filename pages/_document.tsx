@@ -24,11 +24,11 @@ class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://twitterbio.io/og-image.png"
+            content="https://ph-ec.io/images/og-image.png"
           />
           <meta
             name="pHec:image"
-            content="https://twitterbio.io/og-image.png"
+            content="https://ph-ec.io/images/og-image.png"
           />
         </Head>
         <body>

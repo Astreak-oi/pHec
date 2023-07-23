@@ -16,13 +16,13 @@ import {
 
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(false);
-  const [idea, setBio] = useState("");
+  const [idea, setIdea] = useState("");
   const [feedback, setFeedback] = useState<FeedbackType>("Constructive");
   const [generatedIdeas, setGeneratedIdeas] = useState<String>("");
 
   const ideaRef = useRef<null | HTMLDivElement>(null);
 
-  const scrollToBios = () => {
+  const scrollToIdeas = () => {
     if (ideaRef.current !== null) {
       ideaRef.current.scrollIntoView({ behavior: "smooth" });
     }
@@ -37,7 +37,7 @@ const Home: NextPage = () => {
     idea.slice(-1) === "." ? "" : "."
   }`;
 
-  const generateBio = async (e: any) => {
+  const generateIdea = async (e: any) => {
     e.preventDefault();
     setGeneratedIdeas("");
     setLoading(true);
@@ -84,7 +84,7 @@ const Home: NextPage = () => {
       const chunkValue = decoder.decode(value);
       parser.feed(chunkValue);
     }
-    scrollToBios();
+    scrollToIdeas();
     setLoading(false);
   };
 
@@ -129,7 +129,7 @@ const Home: NextPage = () => {
           </div>
           <textarea
             value={idea}
-            onChange={(e) => setBio(e.target.value)}
+            onChange={(e) => setIdea(e.target.value)}
             rows={4}
             className="w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black my-5"
             placeholder={
@@ -147,7 +147,7 @@ const Home: NextPage = () => {
           {!loading && (
             <button
               className="bg-black rounded-xl text-white font-medium px-4 py-2 sm:mt-10 mt-8 hover:bg-black/80 w-full"
-              onClick={(e) => generateBio(e)}
+              onClick={(e) => generateIdea(e)}
             >
               Go With Idea &rarr;
             </button>
