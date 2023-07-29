@@ -1,6 +1,5 @@
-# pHec
 
-# Business Idea Rating & Feedback
+# pHec- Business Idea Rating & Feedback
 
 ## Description
 
