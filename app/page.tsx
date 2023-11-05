@@ -7,7 +7,6 @@ import DropDown, { FeedbackType } from "@/components/DropDown";
 import Footer from "@/components/Footer";
 import { useChat } from "ai/react";
 import { Textarea } from "@/components/ui/textarea";
-
 import {
   Card,
   CardContent,
@@ -15,6 +14,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Icons } from "@/components/icons";
 
 export default function Page() {
   const [idea, setIdea] = useState("");
@@ -55,6 +55,8 @@ export default function Page() {
         <title>Get Idea Rating & Feedback By AI</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      {/* Gradient Start */}
       <div
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
         aria-hidden="true"
@@ -68,18 +70,11 @@ export default function Page() {
         />
       </div>
 
-      <div
-          className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-          aria-hidden="true"
-        >
-          <div
-            className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-            style={{
-              clipPath:
-                "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-            }}
-          />
-        </div>
+      <div aria-hidden="true" className="flex absolute left-0 -z-[1]">
+      <div className="bg-purple-200 opacity-20 blur-3xl w-[1036px] h-[300px] dark:bg-purple-900 dark:opacity-20"></div>
+    </div>
+    
+      {/* Gradient End */}
 
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-20">
         <a
@@ -88,6 +83,7 @@ export default function Page() {
           target="_blank"
           rel="noopener noreferrer"
         >
+          <Icons.spark className="h-5 w-5"/>
           <p>Announcement</p>
         </a>
         <h1 className="sm:text-6xl text-4xl max-w-[708px] font-bold text-slate-900">
@@ -106,7 +102,7 @@ export default function Page() {
             rows={5}
             className="w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black my-5"
             placeholder={
-              "e.g. Objective: My idea is to develop a mobile app that connects local farmers directly with consumers, enabling them to purchase fresh produce and support local agriculture."
+              "Objective: My idea is to develop a mobile app that connects local farmers directly with consumers, enabling them to purchase fresh produce and support local agriculture."
             }
           />
           <div className="flex mb-5 items-center space-x-3">
