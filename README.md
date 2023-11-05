@@ -7,8 +7,7 @@ This project provides a platform for entrepreneurs to get feedback on their busi
 
 ## Demo
 
-![780shots_so](https://github.com/theakashshukla/pHec/assets/49320497/baadafdf-58db-4bd4-9a1e-dce320b42bf1)
-
+![989shots_so](https://github.com/theakashshukla/pHec/assets/49320497/09d0b8f7-6f97-4926-876b-11965e4b37e0)
 
 ## Installation
 
