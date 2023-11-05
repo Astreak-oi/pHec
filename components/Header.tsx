@@ -7,28 +7,28 @@ export default function Header() {
       <Link href="/" className="flex space-x-3">
         <Image
           alt="header text"
-          src="/writingIcon.png"
+          src="/pheclogo.png"
           className="sm:w-12 sm:h-12 w-8 h-8"
-          width={32}
-          height={32}
+          width={34}
+          height={34}
         />
         <h1 className="sm:text-4xl text-2xl font-bold ml-2 tracking-tight">
-          pHec.io
+          phec
         </h1>
       </Link>
-      <a
+      {/* <a
         href="https://pHec.com/templates"
         target="_blank"
         rel="noreferrer"
       >
         <Image
-          alt="Vercel Icon"
-          src="/vercelLogo.png"
+          alt="Brand Icon"
+          src="/name.png"
           className="sm:w-8 sm:h-[27px] w-8 h-[28px]"
           width={32}
           height={28}
         />
-      </a>
+      </a> */}
     </header>
   );
 }
