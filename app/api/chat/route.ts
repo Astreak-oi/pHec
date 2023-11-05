@@ -17,16 +17,15 @@ export async function POST(req: Request) {
   const { feedback, idea } = await req.json();
 
   const format = {
-    "rating": 0,
-    "feedback": [
-      "Provide feedback here in detail.",
-      "Add specific suggestions in detail.",
-      "Address potential improvements in detail.",
-      "Suggest enhancements in detail.",
-      "Offer actionable insights detail."
-    ]
+    rating: 0,
+    feedback: [
+      "Provide specific feedback to improve the idea. Offer constructive suggestions.",
+      "Address potential shortcomings or areas for improvement.",
+      "Highlight the idea's strengths and weaknesses.",
+      "Ensure that the feedback is insightful and directly related to the idea.",
+      "If the idea is innovative, emphasize its uniqueness and potential.",
+    ],
   };
-  
 
   // Ask OpenAI for a streaming completion given the prompt
   const response = await openai.createChatCompletion({

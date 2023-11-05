@@ -7,11 +7,10 @@ import DropDown, { FeedbackType } from "@/components/DropDown";
 import Footer from "@/components/Footer";
 import { useChat } from "ai/react";
 import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
+
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -56,6 +55,31 @@ export default function Page() {
         <title>Get Idea Rating & Feedback By AI</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div
+        className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        aria-hidden="true"
+      >
+        <div
+          className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+          style={{
+            clipPath:
+              "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+          }}
+        />
+      </div>
+
+      <div
+          className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+          aria-hidden="true"
+        >
+          <div
+            className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+            style={{
+              clipPath:
+                "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+            }}
+          />
+        </div>
 
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-20">
         <a
@@ -74,9 +98,7 @@ export default function Page() {
         </p>
         <form className="max-w-xl w-full" onSubmit={onSubmit}>
           <div className="flex mt-10 items-center space-x-3">
-            <p className="text-left font-medium">
-              Just enter your idea
-            </p>
+            <p className="text-left font-medium">Just enter your idea</p>
           </div>
           <Textarea
             value={input}
@@ -155,7 +177,7 @@ export default function Page() {
                           Rating
                         </p>
 
-                        <div className=" flex items-center space-x-4 rounded-md border p-4">
+                        <div className=" flex ms-4 items-center space-x-4 rounded-md border p-4">
                           <div className="flex-1 space-y-1">
                             <div className="w-full dark:bg-gray-200 rounded h-2.5 bg-gray-700 mr-2">
                               <div
@@ -176,10 +198,10 @@ export default function Page() {
                           {feedback.map((item: any) => (
                             <div
                               key={item}
-                              className="mb-0.5 items-start pb-4 last:mb-0 last:pb-0"
+                              className=" items-start ms-4 pb-3 last:mb-0 last:pb-0 "
                             >
                               <div className="space-y-1">
-                                <p className="text-sm text-left font-medium leading-none ">
+                                <p className="text-sm text-left font-medium">
                                   {item}
                                 </p>
                               </div>
