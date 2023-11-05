@@ -7,7 +7,8 @@ This project provides a platform for entrepreneurs to get feedback on their busi
 
 ## Demo
 
-App Demo image placeholder
+![780shots_so](https://github.com/theakashshukla/pHec/assets/49320497/baadafdf-58db-4bd4-9a1e-dce320b42bf1)
+
 
 ## Installation
 
