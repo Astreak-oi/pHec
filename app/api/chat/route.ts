@@ -51,20 +51,6 @@ export async function POST(req: Request) {
     ],
   });
 
-  // const prompt = `Rate the following ${idea} on a scale from 1 to 10, with 1 being poor and 10 being excellent. Provide ${feedback} feedback to help improve the idea. Business ideagraphies with no hashtags and clearly labeled "1." and "2.". ${
-  //   feedback === "Innovative"
-  //     ? "Make sure there is a innovative idea in there and it's a little unique."
-  //     : null
-  // }
-  //     Make sure each generated ideagraphy is less than 160 characters, has short sentences that are found in Buisness ideas, and base them on this context: ${idea}${
-  //   idea.slice(-1) === "." ? "" : "."
-  // }`;
-
-  //   const prompt = `instructions: Please rate the idea "${idea}" on a scale from 1 to 10, with 1 being the least favorable and 10 being the most favorable. Additionally, provide specific, actionable feedback to enhance the strengths of the idea. Your feedback "${feedback}" should be insightful and directly related to the idea.
-  //     rating: /10
-  //     feedback: 1: , 2: , 3: , 4: , 5:
-  //     `;
-
   // Convert the response into a friendly text-stream
   const stream = OpenAIStream(response);
   // Respond with the stream
