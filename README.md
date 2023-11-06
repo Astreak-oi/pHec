@@ -1,13 +1,13 @@
 
 # pHec- Business Idea Rating & Feedback
 
+## Demo
+
+![989shots_so](https://github.com/theakashshukla/pHec/assets/49320497/09d0b8f7-6f97-4926-876b-11965e4b37e0)
+
 ## Description
 
 This project provides a platform for entrepreneurs to get feedback on their business ideas using AI and data visualization. Users submit their ideas in natural language and advanced NLP models analyze strengths, weaknesses, viability, and uniqueness. Visualizations provide data-driven insights. 
-
-## Demo
-
-App Demo image placeholder
 
 ## Installation
 
