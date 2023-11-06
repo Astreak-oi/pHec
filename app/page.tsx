@@ -71,9 +71,9 @@ export default function Page() {
       </div>
 
       <div aria-hidden="true" className="flex absolute left-0 -z-[1]">
-      <div className="bg-purple-200 opacity-20 blur-3xl w-[1036px] h-[300px] dark:bg-purple-900 dark:opacity-20"></div>
-    </div>
-    
+        <div className="bg-purple-200 opacity-20 blur-3xl w-[1036px] h-[300px] dark:bg-purple-900 dark:opacity-20"></div>
+      </div>
+
       {/* Gradient End */}
 
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-20">
@@ -83,7 +83,7 @@ export default function Page() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Icons.spark className="h-5 w-5"/>
+          <Icons.spark className="h-5 w-5" />
           <p>Announcement</p>
         </a>
         <h1 className="sm:text-6xl text-4xl max-w-[708px] font-bold text-slate-900">
@@ -169,24 +169,45 @@ export default function Page() {
 
                     return (
                       <CardContent className="grid gap-4">
-                        <p className="text-left font-medium text-slate-600">
+                        <p className="text-left font-medium text-slate-700">
                           Rating
                         </p>
 
-                        <div className=" flex ms-4 items-center space-x-4 rounded-md border p-4">
+                        {/* <div className=" flex ms-4 items-center space-x-4 rounded-md border p-4">
                           <div className="flex-1 space-y-1">
                             <div className="w-full dark:bg-gray-200 rounded h-2.5 bg-gray-700 mr-2">
                               <div
-                                className="bg-blue-600 h-2.5 rounded dark:bg-blue-500"
+                                className="bg-blue-400 h-2.5 rounded dark:bg-blue-500"
                                 style={{ width: `${rating * 10}%` }}
                               ></div>
                             </div>
                           </div>
-                          <span className="text-sm font-medium text-slate-500">
+                          <span className="text-sm font-medium text-slate-600">
+                            {rating}/10
+                          </span>
+                        </div> */}
+                        
+                        <div className="flex ms-4 items-center space-x-4 rounded-md border p-4">
+                          <div className="flex-1 space-y-1">
+                            <div className="w-full dark:bg-gray-500 rounded h-2.5 bg-gray-300 mr-2">
+                              <div
+                                className={`h-2.5 rounded ${
+                                  rating >= 7
+                                    ? "bg-green-400" // Green for high ratings (7-10)
+                                    : rating >= 4
+                                    ? "bg-orange-400" // Yellow for medium ratings (4-6)
+                                    : "bg-red-400" // Red for low ratings (1-3)
+                                }`}
+                                style={{ width: `${rating * 10}%` }}
+                              ></div>
+                            </div>
+                          </div>
+                          <span className="text-sm font-medium text-slate-600">
                             {rating}/10
                           </span>
                         </div>
-                        <p className="text-left font-medium text-slate-600">
+                        
+                        <p className="text-left font-medium text-slate-700">
                           Feedback
                         </p>
 

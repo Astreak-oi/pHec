@@ -12,7 +12,17 @@ export const metadata: Metadata = {
   openGraph: {
     title,
     description,
+    url: 'https://phec.vercel.app',
+    images: [
+      {
+        url: 'https://phec.vercel.app/images/screenshot.png',
+        width: 1200,
+        height: 630,
+        alt: 'Phec',
+      },
+    ],
     locale: 'en_IN',
+    siteName: 'Phec',
     type: 'website',
   },
   twitter: {
