@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     url: 'https://phec.vercel.app',
     images: [
       {
-        url: 'https://phec.vercel.app/images/screenshot.png',
+        url: 'https://phec.vercel.app/og',
         width: 1200,
         height: 630,
         alt: 'Phec',
