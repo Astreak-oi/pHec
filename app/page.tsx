@@ -90,19 +90,21 @@ export default function Page() {
           Grow your ideas with the help of AI.
         </h1>
         <p className="text-slate-500 mt-5">
-          Please note that ai rating may not be 100% accurate
+          Please note that AI rating may not be 100% accurate
         </p>
         <form className="max-w-xl w-full" onSubmit={onSubmit}>
           <div className="flex mt-10 items-center space-x-3">
-            <p className="text-left font-medium">Just enter your idea</p>
+            <p className="text-left font-medium">
+              Just enter your startup idea
+            </p>
           </div>
           <Textarea
             value={input}
             onChange={handleInputChange}
             rows={5}
-            className="w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black my-5"
+            className="w-full my-5"
             placeholder={
-              "Objective: My idea is to develop a mobile app that connects local farmers directly with consumers, enabling them to purchase fresh produce and support local agriculture."
+              "My idea is to develop a mobile app that connects local farmers directly with consumers, enabling them to purchase fresh produce and support local agriculture."
             }
           />
           <div className="flex mb-5 items-center space-x-3">
@@ -163,7 +165,7 @@ export default function Page() {
                     parsedIdeas.feedback
                   ) {
                     let rating = parsedIdeas.rating;
-                    let feedback = parsedIdeas.feedback;
+                    let feedbacks = parsedIdeas.feedback;
                     console.log(`Rating: ${rating}`);
                     console.log(`Feedback: ${feedback}`);
 
@@ -212,7 +214,7 @@ export default function Page() {
                         </p>
 
                         <div>
-                          {feedback.map((item: any) => (
+                          {feedbacks.map((item: any) => (
                             <div
                               key={item}
                               className=" items-start ms-4 pb-3 last:mb-0 last:pb-0 "
