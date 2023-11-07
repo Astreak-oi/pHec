@@ -16,7 +16,7 @@ export default function Footer() {
         </a>
         •{" "}
         <a
-          href=""
+          href="https://forms.gle/r6rYUcqZWnKVvxbW7"
           target="_blank"
           rel="noreferrer"
           className="hover:underline transition underline-offset-2"
