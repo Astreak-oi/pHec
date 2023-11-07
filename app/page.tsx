@@ -186,10 +186,10 @@ export default function Page() {
                             {rating}/10
                           </span>
                         </div> */}
-                        
+
                         <div className="flex ms-4 items-center space-x-4 rounded-md border p-4">
                           <div className="flex-1 space-y-1">
-                            <div className="w-full dark:bg-gray-500 rounded h-2.5 bg-gray-300 mr-2">
+                            <div className="w-full dark:bg-gray-500 rounded h-2.5 bg-gray-300 mr-2 ">
                               <div
                                 className={`h-2.5 rounded ${
                                   rating >= 7
@@ -206,7 +206,7 @@ export default function Page() {
                             {rating}/10
                           </span>
                         </div>
-                        
+
                         <p className="text-left font-medium text-slate-700">
                           Feedback
                         </p>
