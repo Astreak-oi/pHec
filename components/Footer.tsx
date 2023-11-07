@@ -41,7 +41,7 @@ export default function Footer() {
           <Icons.gitHub className="mr-2 h-5 w-5" />
         </Link>
         <Link
-          href="https://peerlist.com/theakashshukla/"
+          href="https://peerlist.io/theakashshukla"
           className="group"
           aria-label="TaxPal on GitHub"
         >
