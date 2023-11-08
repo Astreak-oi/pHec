@@ -2,6 +2,7 @@ name: "🐛 Bug Report"
 description: "Submit a bug report to help us improve"
 title: "🐛 Bug Report: "
 labels: ["type:bug", "type:triage"]
+projects: ["theakashshukla/6"]
 assignees:
   - octocat
 body:
@@ -52,6 +53,7 @@ body:
     attributes:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
   - type: checkboxes
     id: terms
     attributes:
