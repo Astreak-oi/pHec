@@ -1,4 +1,3 @@
-import { Analytics } from '@vercel/analytics/react';
 import { Metadata } from 'next';
 import '../styles/globals.css';
 
@@ -42,7 +41,7 @@ export default function RootLayout({
       <head><meta name="google-site-verification" content="6EVpVJ_CRnajBz5bw0UdB5_IFi-YPnpOtAyYqR9zHnQ" /></head>
       <body>
         {children}
-        <Analytics />
+    
       </body>
     </html>
   );
