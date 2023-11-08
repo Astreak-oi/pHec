@@ -1,10 +1,11 @@
-name: "🐛 Bug Report"
+name: "🪲 Bug Report"
 description: "Submit a bug report to help us improve"
-title: "🐛 Bug Report: "
+title: "[BUG] <title> "
 labels: ["type:bug", "type:triage"]
-projects: ["theakashshukla/6"]
+
+projects: "theakashshukla/6"
 assignees:
-  - octocat
+  - theakashshukla
 body:
   - type: markdown
     attributes:
