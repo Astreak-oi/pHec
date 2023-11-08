@@ -2,7 +2,6 @@ name: "🪲 Bug Report"
 description: "Submit a bug report to help us improve"
 title: "[BUG] <title> "
 labels: ["type:bug", "type:triage"]
-
 projects: "theakashshukla/6"
 assignees:
   - theakashshukla
