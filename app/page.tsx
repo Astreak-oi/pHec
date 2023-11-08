@@ -104,7 +104,7 @@ export default function Page() {
             rows={5}
             className="w-full my-5"
             placeholder={
-              "My idea is to develop a mobile app that connects local farmers directly with consumers, enabling them to purchase fresh produce and support local agriculture."
+              "Describe your idea (e.g., An app for teaching cats breakdancing!)"
             }
           />
           <div className="flex mb-5 items-center space-x-3">
