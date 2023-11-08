@@ -32,9 +32,9 @@ body:
       label: Version
       description: What version of our software are you running?
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-     
+        - 0.0.3 (Default)
+        - 0.0.2 
+        - 0.0.1 
     validations:
       required: true
   - type: dropdown
@@ -59,4 +59,9 @@ body:
       description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
       options:
         - label: I agree to follow this project's Code of Conduct
-          required: true
+  - type: dropdown
+    attributes:
+      label: Are you willing to submit PR?
+      description: This is absolutely not required, but we are happy to guide you in the contribution process. Find us in help-needed channel on [Discord](https://discord.gg/9wcGSf22PM)!
+      options:
+        - "Yes I am willing to submit a PR!"
