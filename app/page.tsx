@@ -71,7 +71,7 @@ export default function Page() {
       </div>
 
       <div aria-hidden="true" className="flex absolute left-0 -z-[1]">
-        <div className="bg-purple-200 opacity-20 blur-3xl w-[1036px] h-[300px] dark:bg-purple-900 dark:opacity-20"></div>
+        <div className="bg-purple-200 opacity-20 blur-3xl w-[full] h-[full] dark:bg-purple-900 dark:opacity-20"></div>
       </div>
 
       {/* Gradient End */}
