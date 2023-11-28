@@ -44,6 +44,18 @@ export default function RootLayout({
           name="google-site-verification"
           content="6EVpVJ_CRnajBz5bw0UdB5_IFi-YPnpOtAyYqR9zHnQ"
         />
+
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-S10WVS5Q1J"
+        ></script>
+        {/* <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S10WVS5Q1J');
+</script> */}
       </head>
       <body>{children}</body>
     </html>
