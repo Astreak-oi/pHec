@@ -38,4 +38,5 @@ Version 1.0 is complete. Future iterations will add more advanced NLP modeling a
 ## Acknowledgments
 
 - OpenAI API
-- D3.js
+- Next.Js
+- Tailwind CSS
