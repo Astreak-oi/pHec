@@ -1,34 +1,34 @@
 import { Metadata } from "next";
+import { siteConfig } from "@/config/site";
 import "../styles/globals.css";
 
-const title = "Get Idea Rating & Feedback By AI";
-const description =
-  "We&apos;ll analyze your idea and provide ratings, feedback and suggestions";
-
 export const metadata: Metadata = {
-  metadataBase: new URL("https://phec.vercel.app"),
-  title,
-  description,
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: siteConfig.title,
+    template: `%s - ${siteConfig.title}`,
+  },
+  description: siteConfig.description,
   openGraph: {
-    title,
-    description,
+    title: siteConfig.title,
+    description: siteConfig.description,
     url: "https://phec.vercel.app",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Phec",
+        alt: siteConfig.name,
       },
     ],
     locale: "en_IN",
-    siteName: "Phec",
+    siteName: siteConfig.name,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title,
-    description,
+    title: siteConfig.title,
+    description: siteConfig.description,
   },
 };
 
@@ -49,13 +49,7 @@ export default function RootLayout({
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-S10WVS5Q1J"
         ></script>
-        {/* <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-S10WVS5Q1J');
-</script> */}
+        
       </head>
       <body>{children}</body>
     </html>
