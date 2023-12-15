@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: siteConfig.title,
     description: siteConfig.description,
-    url: "https://phec.vercel.app",
+    url: "https://phec.astreak.in",
     images: [
       {
         url: "/og-image.png",

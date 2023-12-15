@@ -17,7 +17,7 @@ export default function Header() {
         </h1>
       </Link>
       {/* <a
-        href="https://pHec.com/templates"
+        href="https://phec.astreak.in/"
         target="_blank"
         rel="noreferrer"
       >
