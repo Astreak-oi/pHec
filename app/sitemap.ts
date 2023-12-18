@@ -1,24 +1,24 @@
-import { MetadataRoute } from 'next'
- 
+import { MetadataRoute } from "next";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://phec.astreak.in/',
+      url: "https://phec.astreak.in/",
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: "monthly",
       priority: 1,
     },
     {
-      url: 'https://phec.astreak.in/about',
+      url: "https://phec.astreak.in/about",
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: 'https://phec.astreak.in/pricing',
+      url: "https://phec.astreak.in/pricing",
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: "monthly",
       priority: 0.5,
     },
-  ]
+  ];
 }
