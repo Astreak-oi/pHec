@@ -40,14 +40,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-
+      <body>
         {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
-            <GoogleAnalytics ga_id= 
-            {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
-          ) : null}
-      </head>
-      <body>{children}</body>
+          <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+        ) : null}
+        {children}
+      </body>
     </html>
   );
 }
