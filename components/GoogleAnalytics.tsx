@@ -4,12 +4,14 @@ import Script from "next/script";
 const GoogleAnalytics = ({ ga_id }: { ga_id: string }) => (
   <>
     <Script
+      strategy="afterInteractive"
       async
       src={`https://www.googletagmanager.com/gtag/js? 
       id=${ga_id}`}
     ></Script>
     <Script
       id="google-analytics"
+      strategy="afterInteractive"
       dangerouslySetInnerHTML={{
         __html: `
           window.dataLayer = window.dataLayer || [];
