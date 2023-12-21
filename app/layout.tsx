@@ -40,10 +40,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <head>
         {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? <GoogleAnalytics /> : null}
-        {children}
-      </body>
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
