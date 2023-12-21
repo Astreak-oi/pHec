@@ -5,6 +5,7 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
+  
   title: {
     default: siteConfig.title,
     template: `%s - ${siteConfig.title}`,
@@ -42,6 +43,7 @@ export default function RootLayout({
     <html lang="en">
       {/* <GoogleAnalytics GA_MEASUREMENT_ID='G-39JZSFB1BR' /> */}
       <head>
+      <meta name="google-site-verification" content="cSK6C5BfCiu_KaOhLptoPI88uBhKnHUvAOB7WPGrnbM" />
         {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS? (
           <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
         ) : null}
