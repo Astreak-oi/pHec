@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import "../styles/globals.css";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -40,16 +41,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta
-          name="google-site-verification"
-          content="6EVpVJ_CRnajBz5bw0UdB5_IFi-YPnpOtAyYqR9zHnQ"
-        />
 
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-S10WVS5Q1J"
-        ></script>
-        
+        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
+            <GoogleAnalytics ga_id= 
+            {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+          ) : null}
       </head>
       <body>{children}</body>
     </html>
