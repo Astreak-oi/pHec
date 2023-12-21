@@ -40,7 +40,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <GoogleAnalytics GA_MEASUREMENT_ID='G-39JZSFB1BR' />
+      {/* <GoogleAnalytics GA_MEASUREMENT_ID='G-39JZSFB1BR' /> */}
+      <head>
+        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS? (
+          <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+        ) : null}
+      </head>
       <body>{children}</body>
     </html>
   );
