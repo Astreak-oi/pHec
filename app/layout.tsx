@@ -41,7 +41,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* <GoogleAnalytics GA_MEASUREMENT_ID='G-39JZSFB1BR' /> */}
       <head>
       <meta name="google-site-verification" content="cSK6C5BfCiu_KaOhLptoPI88uBhKnHUvAOB7WPGrnbM" />
         {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS? (
