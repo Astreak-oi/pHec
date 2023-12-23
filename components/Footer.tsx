@@ -7,7 +7,7 @@ export default function Footer() {
       <div>
         Powered by{" "}
         <a
-          href="#"
+          href="https://astreak.in"
           target="_blank"
           rel="noreferrer"
           className="font-bold hover:underline transition underline-offset-2"
