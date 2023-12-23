@@ -27,25 +27,18 @@ export default function Footer() {
 
       <div className="flex space-x-4 pb-4 sm:pb-0">
         <Link
-          href="https://twitter.com/theskaai"
+          href="https://twitter.com/astreakOfficial"
           className="group"
-          aria-label="TaxPal on Twitter"
+          aria-label="Twitter"
         >
           <Icons.twitx className="mr-2 h-5 w-5" />
         </Link>
         <Link
-          href="https://github.com/theakashshukla/"
+          href="https://linkedin.com/company/astreakOfficial"
           className="group"
-          aria-label="TaxPal on GitHub"
+          aria-label="LinkedIn"
         >
-          <Icons.gitHub className="mr-2 h-5 w-5" />
-        </Link>
-        <Link
-          href="https://peerlist.io/theakashshukla"
-          className="group"
-          aria-label="TaxPal on GitHub"
-        >
-          <Icons.peerlist className="mr-2 h-5 w-5" />
+          <Icons.linkedin className="mr-2 h-5 w-5" />
         </Link>
       </div>
     </footer>

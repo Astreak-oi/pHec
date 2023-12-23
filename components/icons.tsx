@@ -2,6 +2,7 @@ import {
   AlertTriangle,
   ArrowRight,
   Check,
+  LinkedinIcon,
   ChevronLeft,
   ChevronRight,
   Command,
@@ -31,6 +32,7 @@ export type Icon = LucideIcon;
 export const Icons = {
   logo: Command,
   close: X,
+  linkedin: LinkedinIcon,
   spark: Sparkles,
   spinner: Loader2,
   chevronLeft: ChevronLeft,

@@ -7,7 +7,7 @@ export const siteConfig = {
     "We&apos;ll analyze your idea and provide ratings, feedback and suggestions",
   url: "https://phec.astreak.in",
   links: {
-    twitter: "https://twitter.com/theskaai",
+    twitter: "https://twitter.com/astreakOfficial",
     docs: "#",
   },
 };
