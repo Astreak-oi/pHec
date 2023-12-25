@@ -54,7 +54,7 @@ export default function StartupName() {
 
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-20">
         <h1 className="sm:text-6xl text-4xl max-w-[708px] font-bold text-slate-900">
-          Get Your Unique Buiness Idea Name
+          Get Your Unique Business or Startup Name
         </h1>
         <p className="text-slate-500 mt-5">
           Please note that Name may not be 100% valuable.
