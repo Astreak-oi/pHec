@@ -10,10 +10,7 @@ export const nameAiConfig = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(nameAiConfig.url),
-  title: {
-    default: nameAiConfig.title,
-    template: `%s - ${nameAiConfig.title}`,
-  },
+  title: nameAiConfig.title,
   description: nameAiConfig.description,
   openGraph: {
     title: nameAiConfig.title,
