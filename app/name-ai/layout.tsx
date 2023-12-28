@@ -1,37 +1,33 @@
 import { Metadata } from "next";
 import "../../styles/globals.css";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import { siteConfig } from "@/config/site";
 
-export const nameAiConfig = {
-  title: "Get Unique Name by AI",
-  description: "Generate Names for your Startup or Business",
-  url: "https://phec.astreak.in/name-ai",
-};
 
 export const metadata: Metadata = {
-  metadataBase: new URL(nameAiConfig.url),
-  title: nameAiConfig.title,
-  description: nameAiConfig.description,
+  metadataBase: new URL(siteConfig.nameAi.url),
+  title: siteConfig.nameAi.title,
+  description: siteConfig.nameAi.description,
   openGraph: {
-    title: nameAiConfig.title,
-    description: nameAiConfig.description,
-    url: nameAiConfig.url,
+    title: siteConfig.nameAi.title,
+    description: siteConfig.nameAi.description,
+    url: siteConfig.nameAi.url,
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: nameAiConfig.title,
+        alt: siteConfig.nameAi.title,
       },
     ],
     locale: "en_IN",
-    siteName: nameAiConfig.title,
+    siteName: siteConfig.nameAi.title,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: nameAiConfig.title,
-    description: nameAiConfig.description,
+    title: siteConfig.nameAi.title,
+    description: siteConfig.nameAi.description,
   },
 };
 

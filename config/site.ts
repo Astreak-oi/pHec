@@ -10,4 +10,9 @@ export const siteConfig = {
     twitter: "https://twitter.com/astreakOfficial",
     docs: "#",
   },
+  nameAi: {
+    title: "Get Unique Name by AI",
+    description: "Generate Names for your Startup or Business",
+    url: "https://phec.astreak.in/name-ai",
+  },
 };
