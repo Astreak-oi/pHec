@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import "../styles/globals.css";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 
-const nameAiConfig = {
+export const nameAiConfig = {
   title: "Get Unique Name by AI",
   description: "Generate Names for your Startup or Business",
   url: "https://phec.astreak.in/name-ai",
