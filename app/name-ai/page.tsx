@@ -1,17 +1,15 @@
 "use client";
-import Head from "next/head";
 import { useState } from "react";
 import Footer from "@/components/Footer";
 import { Textarea } from "@/components/ui/textarea";
 import Gradient from "@/components/gradient";
 
-export default function StartupName() {
+export default function NameAI() {
   const [idea, setIdea] = useState("");
   const [generatedNames, setGeneratedNames] = useState<
     { name: string; description: string }[]
   >([]);
   const [isLoading, setIsLoading] = useState(false);
-
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();

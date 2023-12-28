@@ -26,7 +26,7 @@ import {
 
 import { Icons } from "@/components/icons";
 
-export default function Page() {
+export default function CompletionAI() {
   const [idea, setIdea] = useState("");
   const [feedback, setFeedback] = useState<FeedbackType>("Constructive");
 
