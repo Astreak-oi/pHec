@@ -10,7 +10,6 @@ import { Textarea } from "@/components/ui/textarea";
 import {
   Card,
   CardContent,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -21,6 +20,7 @@ export default function Page() {
   const [feedback, setFeedback] = useState<FeedbackType>("Constructive");
 
   const ideaRef = useRef<null | HTMLDivElement>(null);
+  console.log("ideaRef", ideaRef);
 
   const scrollToIdeas = () => {
     if (ideaRef.current !== null) {
@@ -39,6 +39,11 @@ export default function Page() {
       },
     });
 
+    console.log("messages", messages);
+    console.log("handleInputChange", handleInputChange);
+    console.log("handleSubmit", handleSubmit);
+
+
   const onSubmit = (e: any) => {
     setIdea(input);
     handleSubmit(e);
@@ -47,7 +52,10 @@ export default function Page() {
   const lastMessage = messages[messages.length - 1];
   const generatedIdeas =
     lastMessage?.role === "assistant" ? lastMessage.content : null;
-  console.log(generatedIdeas);
+
+    console.log("generatedIdeas", generatedIdeas);
+    console.log("lastMessage", lastMessage);
+    console.log("generatedIdeas", generatedIdeas);
 
   return (
     <div className="flex max-w-5xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
