@@ -30,6 +30,7 @@
     "ai": "latest",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "dotenv": "^16.4.5",
     "drizzle-orm": "^0.33.0",
     "drizzle-zod": "^0.5.1",
     "langchain": "^0.2.13",
