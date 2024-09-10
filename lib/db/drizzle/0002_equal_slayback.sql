@@ -1,0 +1,1 @@
+ALTER TABLE "inquiry" ALTER COLUMN "budget" SET DATA TYPE varchar;
