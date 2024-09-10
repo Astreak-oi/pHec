@@ -34,5 +34,6 @@ export async function POST(req: Request) {
 
   const stream = await model.pipe(parser).stream(prompt);
 
-  return LangC.toDataStreamResponse(stream);
+  // return LangC.toDataStreamResponse(stream);
+  return new Response("Hello, World!");
 }
