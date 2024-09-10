@@ -29,7 +29,7 @@ export default function Page() {
   };
 
   const { input, handleInputChange, handleSubmit, isLoading, completion } = useCompletion({
-    api: "/api/rating", // Adjust the API endpoint as needed
+    api: "/api/ai/rating", // Adjust the API endpoint as needed
     body: {
       feedback,
       idea,

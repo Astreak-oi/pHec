@@ -16,7 +16,7 @@ export default function NameAI() {
     setIsLoading(true); // Set isLoading to true when starting the API request
 
     try {
-      const res = await fetch("/api/gemini", {
+      const res = await fetch("/api/ai/gemini", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
