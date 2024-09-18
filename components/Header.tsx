@@ -3,14 +3,14 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center w-full mt-5 border-b-2 pb-7 sm:px-4 px-2">
-      <Link href="/" className="flex space-x-3">
+    <header className="flex justify-between items-center w-full border-b-2 py-4 sm:px-6 px-4 bg-red-400">
+      <Link href="/" className="flex space-x-2 ">
         <Image
           alt="header text"
-          src="/pheclogo.png"
+          src="/favicon.svg"
           className="sm:w-12 sm:h-12 w-8 h-8"
-          width={34}
-          height={34}
+          width={28}
+          height={28}
         />
         <h1 className="sm:text-4xl text-2xl font-bold ml-2 tracking-tight">
           phec
@@ -23,7 +23,7 @@ export default function Header() {
       >
         <Image
           alt="Brand Icon"
-          src="/name.png"
+          src="/favicon.svg"
           className="sm:w-8 sm:h-[27px] w-8 h-[28px]"
           width={32}
           height={28}
