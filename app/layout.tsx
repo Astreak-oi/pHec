@@ -3,6 +3,7 @@ import { siteConfig } from "@/config/site";
 import "../styles/globals.css";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import Header from "@/components/Header";
+import Nav from "@/components/nav";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -47,7 +48,8 @@ export default function RootLayout({
         ) : null}
       </head>
       <body>
-        <Header /> {children}
+        <Nav />
+         {children}
       </body>
     </html>
   );
