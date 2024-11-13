@@ -11,10 +11,10 @@ export default function NameAI() {
   >([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e:any) => {
     e.preventDefault();
-    setIsLoading(true); // Set isLoading to true when starting the API request
-
+    setIsLoading(true); // Start loading
+  
     try {
       const res = await fetch("/api/ai/gemini", {
         method: "POST",
@@ -23,11 +23,17 @@ export default function NameAI() {
         },
         body: JSON.stringify({ input: idea }),
       });
-
+  
       if (res.ok) {
         const data = await res.json();
         console.log("API Response:", data);
-        const parsedData = JSON.parse(data.text);
+  
+        // Extract the JSON string from data.text
+        const rawText = data.text;
+        const jsonString = rawText.replace(/```json\n|```/g, ""); // Remove the triple backticks and 'json' label
+  
+        // Parse the cleaned JSON string
+        const parsedData = JSON.parse(jsonString);
         setGeneratedNames(parsedData.names ?? []);
       } else {
         console.error("Failed to get response from server");
@@ -35,9 +41,11 @@ export default function NameAI() {
     } catch (error) {
       console.error("Error:", error);
     } finally {
-      setIsLoading(false); // Set isLoading to false when API request completes
+      setIsLoading(false); // End loading
     }
   };
+  
+  
 
   return (
     <div className="flex max-w-5xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
