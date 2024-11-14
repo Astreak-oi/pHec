@@ -51,7 +51,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
     //   Ensure the names are creative and distinctive. Your suggestions will play a crucial role in shaping the identity of the startup.
     // `;
 
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     const result = await model.generateContent(prompt);
     const response = await result.response;
     const text = await response.text();
