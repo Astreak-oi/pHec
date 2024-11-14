@@ -3,6 +3,8 @@ import { useState } from "react";
 import Footer from "@/components/Footer";
 import { Textarea } from "@/components/ui/textarea";
 import Gradient from "@/components/gradient";
+import SelectMenu from "@/components/shared/select";
+import { nameLength } from "@/config/ai/menu";
 
 export default function NameAI() {
   const [idea, setIdea] = useState("");
@@ -11,10 +13,10 @@ export default function NameAI() {
   >([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = async (e:any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     setIsLoading(true); // Start loading
-  
+
     try {
       const res = await fetch("/api/ai/gemini", {
         method: "POST",
@@ -23,15 +25,15 @@ export default function NameAI() {
         },
         body: JSON.stringify({ input: idea }),
       });
-  
+
       if (res.ok) {
         const data = await res.json();
         console.log("API Response:", data);
-  
+
         // Extract the JSON string from data.text
         const rawText = data.text;
         const jsonString = rawText.replace(/```json\n|```/g, ""); // Remove the triple backticks and 'json' label
-  
+
         // Parse the cleaned JSON string
         const parsedData = JSON.parse(jsonString);
         setGeneratedNames(parsedData.names ?? []);
@@ -44,22 +46,18 @@ export default function NameAI() {
       setIsLoading(false); // End loading
     }
   };
-  
-  
+
 
   return (
     <div className="flex max-w-5xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
-      
-     
-
       {/* Gradient Start */}
-      
+
       <Gradient />
 
       {/* Gradient End */}
 
-      <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-20">
-        <h1 className="sm:text-6xl text-4xl max-w-[708px] font-bold text-slate-900">
+      <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-10 sm:mt-12">
+        <h1 className="sm:text-5xl text-3xl max-w-[708px] font-bold text-slate-900">
           Get Your Unique Business or Startup Name
         </h1>
         <p className="text-slate-500 mt-5">
@@ -79,6 +77,12 @@ export default function NameAI() {
             placeholder={
               "Describe your idea (e.g., An app for teaching cats breakdancing!)"
             }
+          />
+          <SelectMenu
+            options={nameLength}
+            placeholder="Name Length"
+            label="Name Length"
+            // onSelect={handleSelect}
           />
 
           {!isLoading && (
