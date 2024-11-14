@@ -28,7 +28,6 @@ export default function NameAI() {
 
       if (res.ok) {
         const data = await res.json();
-        console.log("API Response:", data);
 
         // Extract the JSON string from data.text
         const rawText = data.text;
