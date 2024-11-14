@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { Button } from "./ui/button";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,14 +27,11 @@ export default function Nav() {
               isOpen ? "" : "hidden"
             }`}
           >
-            <div className="relative flex flex-col">
-              <button
+            <div className="relative flex flex-col justify-center">
+              <Button
+                variant="ghost"
                 onClick={() => setMenuOne(!menuOne)}
-                className={`flex flex-row rounded-lg lg:px-6 lg:py-4 lg: lg:hover:text-gray-800 ${
-                  menuOne
-                    ? "text-gray-800 lg:border lg:border-gray-600 lg:bg-gray-50"
-                    : "text-black lg:border lg:border-white"
-                }`}
+                className={`flex flex-row `}
               >
                 Component
                 <svg
@@ -44,7 +42,7 @@ export default function Nav() {
                 >
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
                 </svg>
-              </button>
+              </Button>
               {menuOne && (
                 <div className="z-50 flex w-full flex-col rounded-lg px-5 py-5 lg:absolute lg:top-20 lg:w-[800px] bg-gray-100 lg:flex-row lg:flex-wrap lg:py-7 xl:w-[950px]">
                   {/* ITEM */}
@@ -275,18 +273,18 @@ export default function Nav() {
               isOpen ? "" : "hidden"
             }`}
           >
-            <a
-              href="#"
+            <Button
+              variant="ghost"
               className="font-inter rounded-lg lg:px-6 lg:py-4 lg: lg:hover:text-gray-800"
             >
               Sign Up
-            </a>
-            <a
+            </Button>
+            <Button
               className="font-inter rounded-lg bg-black px-8 py-4 text-center text-white hover:bg-gray-800"
-              href="#"
+              
             >
               Login
-            </a>
+            </Button>
           </div>
           <button
             className="absolute right-5 lg:hidden"
