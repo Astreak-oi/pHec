@@ -21,7 +21,7 @@ export default function Nav() {
             />
             <span className="sm:text-3xl text-2xl font-bold">phec</span>
           </Link>
-          
+
           <div
             className={`mt-14 flex flex-col space-y-8 lg:mt-0 lg:flex lg:flex-row lg:space-x-1 lg:space-y-0 ${
               isOpen ? "" : "hidden"
@@ -279,10 +279,7 @@ export default function Nav() {
             >
               Sign Up
             </Button>
-            <Button
-              className="font-inter rounded-lg bg-black px-8 py-4 text-center text-white hover:bg-gray-800"
-              
-            >
+            <Button className="font-inter rounded-lg bg-black px-8 py-4 text-center text-white hover:bg-gray-800">
               Login
             </Button>
           </div>
@@ -302,23 +299,23 @@ export default function Nav() {
               <path
                 d="M3.75 12H20.25"
                 stroke="#160042"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               ></path>
               <path
                 d="M3.75 6H20.25"
                 stroke="#160042"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               ></path>
               <path
                 d="M3.75 18H20.25"
                 stroke="#160042"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               ></path>
             </svg>
           </button>
