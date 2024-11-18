@@ -100,7 +100,7 @@ export const landing = [
       "Astreak's website development services are focused on helping businesses achieve higher rankings in search engine results pages (SERPs). We utilize a comprehensive SEO strategy to ensure your website is easily found by potential customers, driving traffic and conversions. We implement best practices in content creation, on-page optimization, and link building to ensure your online presence is strong.",
   },
   {
-    slug: "ecommerce-solutions",
+    slug: "best-ecommerce-solutions",
     name: "Astreak",
     title: "E-commerce Solutions that Drive Growth",
     description:
